@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Page not found</title>
+
+  <script>
+    const correctPath =
+      "/research/UTN_2026_Europaeische_Gasversorgung.pdf";
+
+    const requestedPath =
+      decodeURIComponent(window.location.pathname);
+
+    if (requestedPath.trimEnd() === correctPath) {
+      window.location.replace(correctPath);
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Page not found</h1>
+  <p>The requested page could not be found.</p>
+</body>
+</html>
